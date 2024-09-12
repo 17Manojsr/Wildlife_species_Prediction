@@ -1,0 +1,136 @@
+/* Container for the donation section */
+.section.donate {
+  padding: 60px 0;
+  background: linear-gradient(to right, #1abc9c, #3498db);
+}
+/* Grid layout for the donation cards */
+.donate-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  list-style: none;
+  padding: 40px 50px;
+  margin: 0;
+}
+
+/* Style for individual donation cards */
+.donate-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.donate-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Content of the donation card */
+.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.progress-text {
+  font-size: 16px;
+  color: #333;
+}
+
+.progress-value {
+  font-size: 16px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.progress-box {
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  height: 6px;
+  margin-bottom: 15px;
+}
+
+.progress {
+  height: 6px;
+  background-color: #28a745;
+  border-radius: inherit;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: center;
+  color: #333;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-wrapper-text {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+.card-wrapper-text data {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.green {
+  color: #28a745;
+}
+
+.yellow {
+  color: #ffc107;
+}
+
+.cyan {
+  color: #17a2b8;
+}
+
+/* Donation button */
+.btn.btn-secondary {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.btn.btn-secondary:hover {
+  background-color: #218838;
+}
+
+.btn.btn-secondary span {
+  margin-right: 5px;
+}

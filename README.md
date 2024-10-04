@@ -61,7 +61,7 @@ The system is designed to automatically detect and classify various animal speci
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/animal-species-prediction.git
+   git clone https://github.com/17Manojsr/Wildlife-species-Prediction.git
    ```
 
 2. Set up the Python environment and install dependencies:

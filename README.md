@@ -67,15 +67,16 @@ The system is designed to automatically detect and classify various animal speci
 2. Set up the Python environment and install dependencies:
 
    ```bash
-   cd animal-species-prediction
+   cd wildguard
    pip install -r requirements.txt
    ```
 
-3. Download or upload your annotated dataset into the appropriate directory (`/data` folder).
+3. Download or upload your annotated dataset into the appropriate directory (`/asset` folder).
 
 4. Run the training script (ensure the dataset is correctly configured):
    ```bash
-   python train.py
+   npm install
+   npm start
    ```
 
 ---
@@ -86,7 +87,7 @@ The system is designed to automatically detect and classify various animal speci
    After training, run the inference script to classify new images:
 
    ```bash
-   python inference.py --input_path /path/to/your/image.jpg
+   python inference.py 
    ```
 
 2. **Real-time Detection:**
@@ -142,5 +143,7 @@ Feel free to submit issues, fork the repo, and send pull requests. Contributions
 ### **Output**
 
 ![Home page](./public/assets/front_page.png)
+
 ![Image Output](./public/assets/image_output.png)
+
 ![Video Output](./public/assets/video_output.png)

@@ -20,14 +20,16 @@ The system is designed to automatically detect and classify various animal speci
 2. **Data Storage**  
    The raw images/videos are stored in cloud storage solutions such as AWS S3 or Google Cloud Storage for scalability.
 
-3. **Data Preprocessing**  
+3. **Data Preprocessing**
+
    - Irrelevant or poor-quality images are filtered out.
    - Labeled data is generated using annotation tools like **LabelMe** or **CVAT**.
 
 4. **Data Augmentation**  
    Data augmentation techniques (e.g., rotation, scaling, and brightness adjustment) are applied to improve the dataset's diversity and robustness.
 
-5. **Model Training**  
+5. **Model Training**
+
    - The SSD model with **MobileNetV2** as the backbone is trained using **TensorFlow** or **PyTorch**.
    - The model is fine-tuned on a dataset of wildlife species, with localization loss and confidence loss used for optimization.
 
@@ -43,6 +45,7 @@ The system is designed to automatically detect and classify various animal speci
 ---
 
 ### **Technologies Used**
+
 - **SSD (Single Shot Multibox Detector)** for object detection
 - **MobileNetV2** as the feature extractor backbone for lightweight and efficient classification
 - **TensorFlow/PyTorch** for model training and development
@@ -56,11 +59,13 @@ The system is designed to automatically detect and classify various animal speci
 ### **Installation**
 
 1. Clone this repository:
+
    ```bash
    git clone https://github.com/yourusername/animal-species-prediction.git
    ```
 
 2. Set up the Python environment and install dependencies:
+
    ```bash
    cd animal-species-prediction
    pip install -r requirements.txt
@@ -79,6 +84,7 @@ The system is designed to automatically detect and classify various animal speci
 
 1. **Inference on New Images:**
    After training, run the inference script to classify new images:
+
    ```bash
    python inference.py --input_path /path/to/your/image.jpg
    ```
@@ -94,23 +100,47 @@ The system is designed to automatically detect and classify various animal speci
 ### **Project Structure**
 
 ```bash
-├── data                   # Annotated images for training
-├── models                 # Pretrained and trained models
-├── scripts                # Training, inference, and utility scripts
-├── notebooks              # Jupyter notebooks for experimentation
-├── requirements.txt       # Python dependencies
-├── README.md              # This file
-└── train.py               # Training script
-└── inference.py           # Inference script for testing images
-└── realtime_detection.py  # Script for real-time detection
+├── node_modules          # Dependencies and packages
+├── public                # Public assets and files
+│   ├── assets            # Image assets or additional resources
+│   ├── detection         # Model-related files
+│   │   ├── group1-shard1of2.bin
+│   │   ├── group1-shard2of2.bin
+│   │   ├── labels.json   # JSON file for class labels
+│   │   ├── model.json    # Model architecture JSON file
+│   ├── favicon.svg       # Favicon for the project
+│   ├── index.html        # Main HTML file
+│   └── manifest.json     # Web app manifest
+├── src                   # Source code for the application
+│   ├── components        # React components
+│   │   ├── detection     # Detection-related components
+│   │   │   ├── Detection.js
+│   │   ├── DonateSection.css
+│   │   ├── DonateSection.js
+│   │   ├── SearchIcon.jsx
+│   │   ├── ServiceSection.css
+│   │   ├── ServiceSection.js
+│   ├── App.css           # Main application styles
+│   ├── App.js            # Main application component
+│   ├── detect.css        # Detection-related styles
+│   ├── index.js          # Main entry point for the React app
+├── .gitignore            # Files and directories to be ignored by Git
+├── package-lock.json     # Lockfile for exact package versions
+├── package.json          # Project metadata and dependencies
+├── README.md             # Project README
+
 ```
 
 ---
-
-
 
 ### **Contributing**
 
 Feel free to submit issues, fork the repo, and send pull requests. Contributions are always welcome!
 
 ---
+
+### **Output**
+
+![Home page](./public/assets/front_page.png)
+![Image Output](./public/assets/image_output.png)
+![Video Output](./public/assets/video_output.png)
